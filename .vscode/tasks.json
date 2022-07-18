@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Swm.Api.Business/Swm.Api.Business.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/Swm.Api.Business/Swm.Api.Business.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch_dev",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/Swm.Api.Business/Swm.Api.Business.csproj",
+                "--launch-profile=SwmApiBusiness_Dev"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch_prod",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/Swm.Api.Business/Swm.Api.Business.csproj",
+                "--launch-profile=SwmApiBusiness_Prod"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

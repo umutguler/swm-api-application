@@ -1,0 +1,25 @@
+{
+    "profiles": {
+        "SwmApiBusiness_Prod": {
+            "commandName": "Project",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Production"
+            },
+            "dotnetRunMessages": true
+        },
+        "SwmApiBusiness_Dev": {
+            "commandName": "Project",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "dotnetRunMessages": true
+        },
+        "SwmApiBusiness_Dev_Watch": {
+            "commandName": "Executable",
+            "executablePath": "dotnet.exe",
+            "commandLineArgs": "watch run --launch-profile=SwmApiBusiness_Dev",
+            "workingDirectory": "$(ProjectDir)",
+            "dotnetRunMessages": true
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": ".NET Core Launch (watched) [DEV]",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "watch_dev",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Swm.Api.Business/bin/Debug/net6.0/Swm.Api.Business.dll",
+            "args": [],
+            "env": { "ASPNETCORE_ENVIRONMENT": "Devlopment" },
+            "cwd": "${workspaceFolder}/Swm.Api.Business",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (standard) [DEV]",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Swm.Api.Business/bin/Debug/net6.0/Swm.Api.Business.dll",
+            "args": [],
+            "env": { "ASPNETCORE_ENVIRONMENT": "Devlopment" },
+            "cwd": "${workspaceFolder}/Swm.Api.Business",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (watched) [PROD]",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "watch_prod",
+            "program": "${workspaceFolder}/Swm.Api.Business/bin/Debug/net6.0/Swm.Api.Business.dll",
+            "args": [],
+            "env": { "ASPNETCORE_ENVIRONMENT": "Production" },
+            "cwd": "${workspaceFolder}/Swm.Api.Business",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (standard) [PROD]",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Swm.Api.Business/bin/Debug/net6.0/Swm.Api.Business.dll",
+            "args": [],
+            "env": { "ASPNETCORE_ENVIRONMENT": "Production" },
+            "cwd": "${workspaceFolder}/Swm.Api.Business",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        }
+    ]
+}

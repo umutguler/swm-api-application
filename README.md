@@ -5,7 +5,7 @@
 
 Make sure you have:
 
--   [dotnet cli](https://dotnet.microsoft.com/download) - I've used the latest .NET 5.
+-   [dotnet cli](https://dotnet.microsoft.com/download) - I've used the latest .NET 6.
 
 ## Installation
 

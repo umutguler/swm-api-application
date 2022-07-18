@@ -91,33 +91,50 @@ namespace Swm.Api.Business
         /// <returns>Task</returns>
         private static async Task RunQuestions(ISwmApiService userService)
         {
-
+            WaitUserInput("Get Full Name by ID for ID=53");
             var question1_a = await userService.GetFullNameById(53);
             Console.WriteLine(question1_a);
 
+            WaitUserInput("Get Full Name by ID for ID=62");
+            Console.ReadKey();
             var question1_b = await userService.GetFullNameById(62);
             Console.WriteLine(question1_b);
 
+            WaitUserInput("Get Full Name by ID for ID=31");
             var question1_c = await userService.GetFullNameById(31);
             Console.WriteLine(question1_c);
 
+            WaitUserInput("Get Full Name by ID for ID=42");
             var question1_d = await userService.GetFullNameById(42);
             Console.WriteLine(question1_d);
 
+            WaitUserInput("Get First Names by Age in CSV for age=23");
             var question2_a = await userService.GetFirstNamesByAgeCsv(23);
             Console.WriteLine(question2_a);
 
+            WaitUserInput("Get First Names by Age in CSV for age=54");
             var question2_b = await userService.GetFirstNamesByAgeCsv(54);
             Console.WriteLine(question2_b);
 
+            WaitUserInput("Get First Names by Age in CSV for age=66");
             var question2_c = await userService.GetFirstNamesByAgeCsv(66);
             Console.WriteLine(question2_c);
 
+            WaitUserInput("Get First Names by Age in CSV for age=102");
             var question2_d = await userService.GetFirstNamesByAgeCsv(102);
             Console.WriteLine(question2_d);
 
+            WaitUserInput("Get Gender Per Age Count");
             var question3 = (await userService.GetGenderCountPerAge()).AgePerGender.ToString();
             Console.WriteLine(question3);
+            Console.WriteLine("Finished!");
+        }
+
+        private static void WaitUserInput(string message)
+        {
+            Console.WriteLine("Press any key to run next question...");
+            Console.WriteLine(message);
+            Console.ReadKey();
         }
     }
 }

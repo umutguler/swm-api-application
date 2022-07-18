@@ -12,8 +12,8 @@ Make sure you have:
 
 ## Usage
 
-You can use VSCode, it has a launch.json ready for you to pick a profile.
-Or Visual Studio IDE, also has profiles to launch in different modes.
+-   You can use VSCode, it has a launch.json ready for you to pick a profile. Or Visual Studio IDE, also has profiles to launch in different modes.
+-   It will tell you which question it's about to run and wait for your keyboard key input (any key) to run it.
 
 ## Option #1 (Simplest) - Run in Visual Studio IDE
 1. Open VS 2019 or 2022 IDE
